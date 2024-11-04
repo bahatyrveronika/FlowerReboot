@@ -15,4 +15,10 @@ public class RibbonDecorator extends ItemDecorator {
     public String getDescription() {
         return item.getDescription() + ", with Ribbon";
     }
+
+    @Override
+    public double getPrice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+    }
 }

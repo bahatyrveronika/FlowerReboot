@@ -1,5 +1,5 @@
 package com.example.demo.flower;
 
 public enum FlowerType {
-    CHAMOMILE, ROSE, TULIP;
+    CHAMOMILE, ROSE, TULIP, CACTUS, ROMASHKA;
 }

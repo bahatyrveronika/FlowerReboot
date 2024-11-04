@@ -15,4 +15,10 @@ public class BasketDecorator extends ItemDecorator {
     public String getDescription() {
         return item.getDescription() + ", in Basket";
     }
+
+    @Override
+    public double getPrice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+    }
 }

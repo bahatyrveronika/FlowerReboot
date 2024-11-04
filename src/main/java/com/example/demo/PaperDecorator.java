@@ -15,4 +15,10 @@ public class PaperDecorator extends ItemDecorator {
     public String getDescription() {
         return item.getDescription() + ", Paper Wrapped";
     }
+
+    @Override
+    public double getPrice() {
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+    }
+
 }

@@ -8,7 +8,6 @@ public abstract class ItemDecorator extends Item {
         this.item = item;
     }
 
-    @Override
     public String getDescription() {
         return item.getDescription();
     }

@@ -55,6 +55,19 @@ public class Flower extends Item {
         return color.toString();
     }
 
+    public double getSepalLength() {
+        return this.sepalLength;
+    }
+    
+    public FlowerType getFlowerType() {
+        return this.flowerType;
+    }
+
+    @Override
+    public double getPrice() {
+        return this.price;
+    }
+
     public boolean match(Flower f) {
         return this.price == f.getPrice() && this.flowerType.equals(f.getFlowerType())
                 && this.getSepalLength() == f.getSepalLength();

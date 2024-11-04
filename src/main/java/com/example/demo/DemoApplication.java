@@ -27,12 +27,12 @@ public class DemoApplication {
     public List<Order> listFlowers() {
         return List.of(
                 new Order(
-                        List.of(new Flower(10, FlowerColor.BLUE, 10, FlowerType.ROSE)),
+                        List.of(new Flower(10.0, FlowerColor.BLUE, 10.0, FlowerType.ROSE)),
                         new DHLDeliveryStrategy(),
                         new CreditCardPaymentStrategy()
                 ),
                 new Order(
-                        List.of(new Flower(10, FlowerColor.BLUE, 10, FlowerType.ROSE)),
+                        List.of(new Flower(10.0, FlowerColor.BLUE, 10.0, FlowerType.ROSE)),
                         new PostDeliveryStrategy(),
                         new PayPalPaymentStrategy()
                 )

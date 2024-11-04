@@ -1,10 +1,13 @@
 package com.example.demo.flower;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
-public class FlowerBucket {
+import com.example.demo.Item;
+
+public class FlowerBucket extends Item {
     private List<FlowerPack> flowerPacks;
+    protected String description = "Flower Bucket";
 
     public FlowerBucket() {
         flowerPacks = new ArrayList<>();
@@ -20,5 +23,9 @@ public class FlowerBucket {
             price += flowerPack.getPrice();
         }
         return price;
+    }
+
+    public String getDescription() {
+        return this.description;
     }
 }

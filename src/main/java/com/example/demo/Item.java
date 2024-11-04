@@ -6,7 +6,13 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Item {
-    private Integer price;
+    protected String description = "Unknown Item";
+    
+    private double price;
     private String name;
+
+    public double price() {
+        return this.price;
+    }
 
 }
